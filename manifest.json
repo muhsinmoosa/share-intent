@@ -1,0 +1,55 @@
+{
+	"short_name": "Sharing Demo",
+	"name": "Web Target Sharing Demo",
+	"icons": [
+		{
+			"src": "/android-chrome-192x192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/android-chrome-512x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"share_target": {
+		"action": "/share",
+		"method": "POST",
+		"enctype": "multipart/form-data",
+		"params": {
+			"files": [
+				{
+					"name": "textFiles",
+					"accept": [
+						"text/plain",
+						".txt"
+					]
+				},
+				{
+					"name": "htmlFiles",
+					"accept": [
+						"text/html",
+						".html"
+					]
+				},
+				{
+					"name": "images",
+					"accept": [
+						"image/jpeg",
+						"image/png",
+						"image/webp",
+						"image/gif"
+					]
+				}
+			],
+			"title": "title",
+			"text": "text",
+			"url": "url"
+		}
+	},
+	"start_url": "/",
+	"background_color": "#ffffff",
+	"display": "standalone",
+	"theme_color": "#ffffff"
+}
